@@ -1,4 +1,20 @@
 // alert("loading");
+
+function addNewTSField() {
+    let newNode = document.createElement("textarea");
+    newNode.classList.add("form-control");
+    newNode.classList.add("eqField");
+    newNode.classList.add("mt-2");
+    newNode.setAttribute("rows", 3);
+    newNode.setAttribute("placeholder", "Enter here");
+  
+    let tsOb = document.getElementById("ts");
+    let tsAddButtonOb = document.getElementById("tsAddButton");
+  
+    tsOb.insertBefore(newNode, tsAddButtonOb);
+  }
+
+
 function addNewWEField() {
     //   console.log("Adding new field");
   
@@ -64,9 +80,20 @@ function addNewWEField() {
   
     //objective
   
-    document.getElementById("objectiveT").innerHTML = document.getElementById(
-      "objectiveField"
-    ).value;
+    // document.getElementById("objectiveT").innerHTML = document.getElementById(
+    //   "objectiveField"
+    // ).value;
+   
+    let tss = document.getElementsByClassName("tsField");
+  
+    let s = "";
+  
+    for (let e of tss) {
+      s = s + `<li> ${e.value} </li>`;
+    }
+  
+    document.getElementById("tsT").innerHTML = s;
+  
   
     //we
   
