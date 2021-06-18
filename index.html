@@ -10,7 +10,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Resume Generator</title>
+    <title>Resume Builder</title>
 </head>
 
 <body>
@@ -18,8 +18,12 @@
 
     <div class="card mx-5 mt-3" id="cv-form">
         <div class="card-header">
-            <h1 class="text-center my-2">Resume Generator</h1>
-            <p class="text-center">By Tushar Kashyap</p>
+            <h1 class="text-center my-2">Resume Builder</h1>
+            <div class="text-center my-2">
+                <img class="circular--square" src="undraw_Updated_resume_re_q1or.png" />
+            </div>
+
+            <h3 class="text-center">By Tushar Kashyap</3>
 
         </div>
         <div class="card-body">
@@ -28,70 +32,87 @@
                 <div class="row">
                     <div class="col-md-6">
                         <!-- first col -->
-                        <h3>Personal Information</h3>
+                        <h3>Personal Information :</h3>
 
                         <div class="form-group">
-                            <label for="nameField">Your Name</label>
+                            <label for="nameField">Your Name :</label>
                             <input type="text" id="nameField" placeholder="Enter here" class="form-control" />
                         </div>
 
                         <div class="form-group mt-2">
-                            <label for="contactField">Your Contact</label>
+                            <label for="contactField">Your Contact :</label>
                             <input type="text" id="contactField" placeholder="Enter here" class="form-control" />
                         </div>
 
                         <div class="form-group mt-2">
-                            <label for="addressField">Collage Name</label>
+                            <label for="addressField">Collage/University Name :</label>
                             <textarea id="addressField" placeholder="Enter here" class="form-control"
                                 rows="5"></textarea>
                         </div>
 
                         <div class="form-group mt-3">
-                            <label for="">Select your photo</label>
+                            <label for="">Upoad your photo</label>
                             <input id="imgField" type="file" class="form-control" />
                         </div>
 
-                        <p class="text-secondary my-3">Important Links</p>
+                        <p class="text-secondary my-3">Important Links :</p>
 
                         <div class="form-group mt-2">
-                            <label for="fbField">Gmail</label>
+                            <label for="fbField">Gmail : </label>
                             <input type="text" id="fbField" placeholder="Enter here" class="form-control" />
                         </div>
                         <div class="form-group mt-2">
-                            <label for="instaField">Github</label>
+                            <label for="instaField">Github : </label>
                             <input type="text" id="instaField" placeholder="Enter here" class="form-control" />
                         </div>
                         <div class="form-group mt-2">
-                            <label for="linkedField">LinkedIn</label>
+                            <label for="linkedField">LinkedIn : </label>
                             <input type="text" id="linkedField" placeholder="Enter here" class="form-control" />
                         </div>
+                        <hr>
+                        <div class="form-group mt-2">
+                            <label for="">Give your Description :-</label>
+                            <textarea id="objectiveField" rows="5" placeholder="Enter here"
+                                class="form-control"></textarea>
+                        </div>
+
                     </div>
                     <div class="col-md-6">
                         <!-- second col -->
-                        <h3>Professional Information</h3>
+                        <h3>Professional Information :</h3>
 
-                        <!-- <div class="form-group mt-2">
-                            <label for="">Objective</label>
-                            <textarea id="objectiveField" rows="5" placeholder="Enter here"
-                                class="form-control"></textarea>
-                        </div> -->
+                        <div class="form-group mt-2">
+                            <label for="">10Th class percentage :</label>
+                            <textarea id="m1" placeholder="Enter here" class="form-control " rows="1"></textarea>
+                        </div>
 
-                        <div class="form-group mt-2" id="ts">
-                            <label for="">Technical Skills :</label>
-                            <textarea placeholder="Enter here" class="form-control tsField" rows="3"></textarea>
+                        <div class="form-group mt-2">
+                            <label for="">12Th class percentage :</label>
+                            <textarea id="m2" placeholder="Enter here" class="form-control " rows="1"></textarea>
+                        </div>
+
+                        <div class="form-group mt-2">
+                            <label for="">Collage Cgpa :</label>
+                            <textarea id="m3" placeholder="Enter here" class="form-control " rows="1"></textarea>
+                        </div>
+
+                        <div class="form-group mt-2" id="t">
+                            <label for="">Techincal Skills :</label>
+                            <textarea placeholder="Enter here" class="form-control tField" rows="3"></textarea>
 
                             <!-- new textarea -->
 
-                            <div class="container text-center mt-2" id="tsAddButton">
-                                <button onclick="addNewTSField()" class="btn btn-primary btn-sm">
+                            <div class="container text-center mt-2" id="tAddButton">
+                                <button onclick="addNewTField()" class="btn btn-primary btn-sm">
                                     Add
                                 </button>
                             </div>
+
                         </div>
 
 
                         <div class="form-group mt-2" id="we">
-                            <label for="">Projects/Internships :</label>
+                            <label for="">Internships/Projects :</label>
                             <textarea placeholder="Enter here" class="form-control weField" rows="3"></textarea>
 
                             <!-- new textarea -->
@@ -135,21 +156,30 @@
                     class="img-fluid myimg" id="imgTemplate" />
 
                 <div class="container">
-                    <p id="nameT1">Aman Kumar Tiwari</p>
+                    <p id="nameT1"></p>TUSHAR KASHYAP</p>
                     <p id="contactT">+914542454541,+9154564154</p>
-                    <p id="addressT">563563/4524152 Sector 35 Noida , INDIA</p>
+                    <p id="addressT">563563/4524152 jammu , INDIA</p>
 
                     <hr />
+                    <p id="objectiveT">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, tenetur fuga,
+                        repellat ex eligendi quia autem excepturi quod minus, commodi beatae adipisci incidunt
+                        doloremque laboriosam voluptatem enim ratione esse voluptate.</p>
 
+                    <hr />
                     <p>
-                        <a id="fbT" href="#1">https://www.facebook.com/LearnCodeWithDurgesh</a>
+                        <p>Gmail :</p>
+                        <a id="fbT" href="#1">https://www.tusharkashyap2768@gmail.com/LearnCodeWithDurgesh</a>
                     </p>
                     <p>
-                        <a id="instaT" href="#1">https://www.instagram.com/Durgesh_k_t</a>
+                        <p>Github :</p>
+                        <a id="instaT" href="#1">https://www.github.com/Durgesh_k_t</a>
                     </p>
                     <p>
-                        <a id="linkedT" href="#1">https://www.linkedin.com/LearnCodeWithDurgesh</a>
+                        <p>LinkedIn :</p>
+                        <a id="linkedT" href="#1">https://www.linkedin.com</a>
                     </p>
+                    <!-- objective card  -->
+                    <hr />
                 </div>
             </div>
             <div class="col-md-8 py-5">
@@ -158,15 +188,65 @@
                     Aman Kumar Tiwari
                 </h1>
 
-                <!-- Technical Skills  -->
+               <!-- 10th class % -->
 
+               <div class="card mt-1">
+                <div class="card-header background">
+                    <h5>10Th class percentage :</h5>
+                </div>
+                <div class="card-body">
+                    <ul id="m1T">
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Odit, ad.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- 12th class % -->
+
+            <div class="card mt-1">
+                <div class="card-header background">
+                    <h5>12Th class percentage :</h5>
+                </div>
+                <div class="card-body">
+                    <ul id="m2T">
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Odit, ad.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- collage cpga % -->
+
+            <div class="card mt-1">
+                <div class="card-header background">
+                    <h5>collage Cgpa :</h5>
+                </div>
+                <div class="card-body">
+                    <ul id="m3T">
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Odit, ad.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+                <!-- work Experience -->
 
                 <div class="card mt-4">
                     <div class="card-header background">
-                        <h3>Technical Skills</h3>:</h3>
+                        <h5>Techincal Skills</h5>
                     </div>
                     <div class="card-body">
-                        <ul id="tsT">
+                        <ul id="Ts">
                             <li>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Odit, ad.
@@ -182,13 +262,12 @@
                         </ul>
                     </div>
                 </div>
-                
 
-                <!-- projects/intenships -->
+                <!-- work Experience -->
 
                 <div class="card mt-4">
                     <div class="card-header background">
-                        <h3>Projects/Internships :</h3>
+                        <h5>Internships/Projects</h5>
                     </div>
                     <div class="card-body">
                         <ul id="weT">
@@ -208,11 +287,11 @@
                     </div>
                 </div>
 
-                <!-- activities -->
+                <!-- academic Qualification  -->
 
                 <div class="card mt-4">
                     <div class="card-header background">
-                        <h3>Extra-Curricular Activities and Achievements:</h3>
+                        <h5>Extra-Curricular Activities and Achievements :-</h5>
                     </div>
                     <div class="card-body">
                         <ul id="aqT">
