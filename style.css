@@ -1,19 +1,43 @@
 body {
-    background-color: #e2e2e2;
+    background-color:#FFFAF0;
+    
   }
   #cv-form {
-    /* display: none; */
+    
+    background-color: white;
     /* margin-top: 10px; */
+    border-style: solid;
+      
   }
   #cv-template {
     display: none;
+    border-style: solid;
   }
   .myimg {
     /* border: 1px solid red; */
-    border-radius: 50%;
+  
     width: 200px;
+    height:200px;
+    border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%;
+    
+    
+    
   }
   
   .background {
-    background-color: aqua;
+    background-color:#CBD5E0;
   }
+
+    .circular--square {
+        width: 200px;
+        height: 200px;
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%;
+      }
+    
+  
