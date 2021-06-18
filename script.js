@@ -1,18 +1,21 @@
 // alert("loading");
 
-function addNewTSField() {
-    let newNode = document.createElement("textarea");
-    newNode.classList.add("form-control");
-    newNode.classList.add("eqField");
-    newNode.classList.add("mt-2");
-    newNode.setAttribute("rows", 3);
-    newNode.setAttribute("placeholder", "Enter here");
-  
-    let tsOb = document.getElementById("ts");
-    let tsAddButtonOb = document.getElementById("tsAddButton");
-  
-    tsOb.insertBefore(newNode, tsAddButtonOb);
-  }
+function addNewTField() {
+  //   console.log("Adding new field");
+
+  let newNode = document.createElement("textarea");
+  newNode.classList.add("form-control");
+  newNode.classList.add("tField");
+  newNode.classList.add("mt-2");
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter here");
+
+  let tOb = document.getElementById("t");
+  let tAddButtonOb = document.getElementById("tAddButton");
+
+  tOb.insertBefore(newNode, tAddButtonOb);
+}
+
 
 
 function addNewWEField() {
@@ -80,20 +83,33 @@ function addNewWEField() {
   
     //objective
   
-    // document.getElementById("objectiveT").innerHTML = document.getElementById(
-    //   "objectiveField"
-    // ).value;
-   
-    let tss = document.getElementsByClassName("tsField");
+    document.getElementById("objectiveT").innerHTML = document.getElementById(
+      "objectiveField"
+    ).value;
+
+
+    document.getElementById("m1T").innerHTML = document.getElementById(
+      "m1"
+    ).value;
+
+    document.getElementById("m2T").innerHTML = document.getElementById(
+      "m2"
+    ).value;
+
+    document.getElementById("m3T").innerHTML = document.getElementById(
+      "m3"
+    ).value;
+        //we
   
-    let s = "";
+        let wt = document.getElementsByClassName("tField");
   
-    for (let e of tss) {
-      s = s + `<li> ${e.value} </li>`;
-    }
-  
-    document.getElementById("tsT").innerHTML = s;
-  
+        let s = "";
+      
+        for (let e of wt) {
+          s = s + `<li> ${e.value} </li>`;
+        }
+      
+        document.getElementById("Ts").innerHTML = s;
   
     //we
   
