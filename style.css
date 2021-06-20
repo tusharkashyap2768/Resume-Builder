@@ -1,5 +1,6 @@
 body {
-    background-color:#FFFAF0;
+    background-color:white;
+    
     
   }
   #cv-form {
@@ -7,11 +8,13 @@ body {
     background-color: white;
     /* margin-top: 10px; */
     border-style: solid;
+  
       
   }
   #cv-template {
     display: none;
     border-style: solid;
+    background-color :white;
   }
   .myimg {
     /* border: 1px solid red; */
@@ -26,6 +29,15 @@ body {
     
     
   }
+
+  .form-control
+  {
+    border: 1px solid #4FD1C5;
+    padding: 5px;
+     
+  }
+
+  
   
   .background {
     background-color:#CBD5E0;
