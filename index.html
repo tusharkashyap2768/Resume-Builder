@@ -9,8 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-
-    <title>Resume Builder</title>
+    <title >Resume Builder </title>
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/resume-website.png">
 </head>
 
 <body>
@@ -18,12 +18,12 @@
 
     <div class="card mx-5 mt-3" id="cv-form">
         <div class="card-header">
-            <h1 class="text-center my-2">Resume Builder</h1>
+            <h1 class="text-center my-2">Resume Builder 📝</h1>
             <div class="text-center my-2">
                 <img class="circular--square" src="undraw_Updated_resume_re_q1or.png" />
             </div>
 
-            <h3 class="text-center">By Tushar Kashyap</3>
+            <h3 class="text-center">By Tushar Kashyap ❤️ </h3>
 
         </div>
         <div class="card-body">
@@ -48,6 +48,12 @@
                             <label for="addressField">Collage/University Name :</label>
                             <textarea id="addressField" placeholder="Enter here" class="form-control"
                                 rows="5"></textarea>
+                        </div>
+
+                        <div class="form-group mt-2">
+                            <label for="branchField">course/Branch</label>
+                            <textarea id="branchField" placeholder="Enter here" class="form-control"
+                                rows="3"></textarea>
                         </div>
 
                         <div class="form-group mt-3">
@@ -92,7 +98,7 @@
                         </div>
 
                         <div class="form-group mt-2">
-                            <label for="">Collage Cgpa :</label>
+                            <label for="">Collage Name Cgpa :</label>
                             <textarea id="m3" placeholder="Enter here" class="form-control " rows="1"></textarea>
                         </div>
 
@@ -156,11 +162,13 @@
                     class="img-fluid myimg" id="imgTemplate" />
 
                 <div class="container">
-                    <p id="nameT1"></p>TUSHAR KASHYAP</p>
+                    <p id="nameT1"></p></p>
                     <p id="contactT">+914542454541,+9154564154</p>
                     <p id="addressT">563563/4524152 jammu , INDIA</p>
+                    <p id="branchT">btech cse</p>
 
                     <hr />
+                    <!-- about me -->
                     <p id="objectiveT">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, tenetur fuga,
                         repellat ex eligendi quia autem excepturi quod minus, commodi beatae adipisci incidunt
                         doloremque laboriosam voluptatem enim ratione esse voluptate.</p>
@@ -178,21 +186,21 @@
                         <p>LinkedIn :</p>
                         <a id="linkedT" href="#1">https://www.linkedin.com</a>
                     </p>
-                    <!-- objective card  -->
+                    
                     <hr />
                 </div>
             </div>
             <div class="col-md-8 py-5">
                 <!-- second col  -->
-                <h1 id="nameT2" class="text-center" style="font-weight: 980">
+                <h2 id="nameT2" class="text-center" style="font-weight: 980">
                     Aman Kumar Tiwari
-                </h1>
+                </h2>
 
                <!-- 10th class % -->
 
                <div class="card mt-1">
                 <div class="card-header background">
-                    <h5>10Th class percentage :</h5>
+                    <h5>School name 10Th class percentage :</h5>
                 </div>
                 <div class="card-body">
                     <ul id="m1T">
@@ -209,7 +217,7 @@
 
             <div class="card mt-1">
                 <div class="card-header background">
-                    <h5>12Th class percentage :</h5>
+                    <h5>School name and 12Th class percentage :</h5>
                 </div>
                 <div class="card-body">
                     <ul id="m2T">
@@ -226,7 +234,7 @@
 
             <div class="card mt-1">
                 <div class="card-header background">
-                    <h5>collage Cgpa :</h5>
+                    <h5>College name and Cgpa :</h5>
                 </div>
                 <div class="card-body">
                     <ul id="m3T">
@@ -311,11 +319,13 @@
                     </div>
                 </div>
 
-                <div class="container mt-3 text-center">
-                    <button onclick="printCV()" class="btn background">Print CV</button>
-                </div>
+                
             </div>
         </div>
+    </div>
+
+    <div class="container mt-3 text-center">
+        <button onclick="printCV()" class="btn background">Print CV</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
