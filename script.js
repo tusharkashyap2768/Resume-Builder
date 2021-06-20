@@ -1,7 +1,5 @@
-// alert("loading");
-
+// add new fields
 function addNewTField() {
-  //   console.log("Adding new field");
 
   let newNode = document.createElement("textarea");
   newNode.classList.add("form-control");
@@ -19,8 +17,7 @@ function addNewTField() {
 
 
 function addNewWEField() {
-    //   console.log("Adding new field");
-  
+   
     let newNode = document.createElement("textarea");
     newNode.classList.add("form-control");
     newNode.classList.add("weField");
@@ -50,7 +47,7 @@ function addNewWEField() {
   
   //generating cv
   function generateCV() {
-    // console.log("generating CV");
+    
   
     let nameField = document.getElementById("nameField").value;
   
@@ -71,6 +68,11 @@ function addNewWEField() {
     document.getElementById("addressT").innerHTML = document.getElementById(
       "addressField"
     ).value;
+
+    document.getElementById("branchT").innerHTML = document.getElementById(
+      "branchField"
+    ).value;
+
     document.getElementById("fbT").innerHTML = document.getElementById(
       "fbField"
     ).value;
